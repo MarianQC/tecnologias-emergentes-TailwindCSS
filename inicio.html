@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portal de Tecnologías Emergentes - Inicio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+    <main>
+        <nav class="fixed top-0 z-50 w-full bg-gray-900 text-white py-3 shadow-md">
+    <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
+        <a class="text-xl font-bold ml-5 text-blue-400 hover:text-blue-300" href="inicio.html">Tecnologías Emergentes</a>
+        
+        <button class="md:hidden text-white focus:outline-none" type="button" id="navbarToggler" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        
+        <div class="hidden w-full md:block md:w-auto" id="menuDesplegable">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:gap-4 ml-auto" id="main-menu">
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html">Inicio</a></li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html#sobrenosotros">Sobre Nosotros</a></li>
+                <li class="relative group">
+                    <button id="dropdownNavbarLink" class="flex items-center justify-between w-full py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 md:w-auto font-bold">
+                        Explora las Tecnologías
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <ul id="dropdownNavbar" class="absolute hidden z-10 font-normal bg-gray-800 divide-y divide-gray-700 rounded shadow w-56 md:group-hover:block">
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="inteligencia_artificial.html">Inteligencia Artificial</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="machine_learning.html">Machine Learning</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="realidad_vr_ar.html">Realidad Virtual/AR</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="blockchain.html">Blockchain</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="iot.html">Internet de las Cosas</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="criptografia_postcuantica.html">Criptografía post-cuántica</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="impresion_3d_avanzada.html">Impresión 3D avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="robotica_avanzada.html">Robótica Avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="edge_computing.html">Edge Computing</a></li>
+                    </ul>
+                </li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold mr-4" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <div class="container mx-auto text-center my-5 pt-16 px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800">Bienvenidos al Portal de Tecnologías Emergentes</h1>
+        </div>
+
+           <div id="carouselTecnologias"
+            class="relative max-w-7xl mx-auto overflow-hidden mb-12 shadow-xl rounded-lg">
+            <div class="relative w-full overflow-hidden">
+                <div class="flex transition-transform duration-700 ease-in-out" id="carouselInnerTecnologias">
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/IA.jpg" class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Inteligencia Artificial" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Inteligencia Artificial</h5>
+                                <p class="text-sm">Automatización inteligente para transformar industrias.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/blockchain.jpg"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]" alt="Blockchain"
+                            loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Blockchain</h5>
+                                <p class="text-sm">Seguridad y transparencia en la era digital.</p>
+                                                                </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/IoT.jpg" class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Internet de las Cosas" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-20">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Internet de las Cosas</h5>
+                                <p class="text-sm">Conectividad inteligente para un mundo interconectado.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/realidadvirtual.jpg"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]" alt="Realidad Virtual"
+                            loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-20">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Realidad Virtual</h5>
+                                <p class="text-sm">Simulación inmersiva para entrenar, explorar y crear sin límites físicos.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/realidadaumentada.jpg"
+                            class="block w-full h-full object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Realidad Aumentada" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-20">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Realidad Aumentada</h5>
+                                <p class="text-sm">Elementos digitales que enriquecen la percepción del mundo real.</p>
+                                                                </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/machinelearning.jpg"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Machine Learning" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Machine Learning</h5>
+                                <p class="text-sm">Algoritmos que aprenden de los datos para tomar decisiones inteligentes en
+                                    tiempo
+                                    real.</p>
+                                                                </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/criptografia.png"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Criptografia post cuantica para la seguridad" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Criptografía post-cuántica para la seguridad</h5>
+                                <p class="text-sm">Protección digital frente a futuros ataques cuánticos.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/impresion3d.webp"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Impresión 3D avanzada" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Impresión 3D Avanzada</h5>
+                                <p class="text-sm">Fabricación precisa y personalizada en múltiples industrias.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/robotica.jpeg"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Robótica avanzada" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Robótica Avanzada</h5>
+                                <p class="text-sm">Máquinas inteligentes que automatizan tareas complejas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="imagen/edgecomputing.png"
+                            class="block w-full h-auto object-cover max-h-[70vh] min-h-[300px]"
+                            alt="Edge Computing" loading="lazy">
+                        <div class="absolute inset-0 flex items-end justify-center pb-8 bg-black bg-opacity-40">
+                            <div class="text-center text-white p-4">
+                                <h5 class="text-2xl font-semibold">Edge Computing</h5>
+                                <p class="text-sm">Procesamiento rápido y seguro cerca del origen de los datos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button
+                class="absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                type="button" onclick="slideTecnologias(-1)">
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white/30">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                </span>
+            </button>
+            <button
+                class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                type="button" onclick="slideTecnologias(1)">
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white/30">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Siguiente</span>
+                </span>
+            </button>
+        </div>
+
+
+        <hr class="border-gray-300 my-12" />
+
+        <div class="container mx-auto my-12 pt-12 px-4">
+            <h2 class="text-3xl font-bold text-center mb-6 text-gray-800 border-b-2 border-blue-400 pb-2 max-w-lg mx-auto">Nuestro Propósito</h2>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <p class="text-lg text-gray-800">
+                    Este sitio web informativo está dedicado a explorar las tecnologías emergentes que están transformando el mundo actual, como la Inteligencia Artificial, el Machine Learning, la Realidad Aumentada, el Blockchain y el Internet de las Cosas. Cada tema se presenta de forma clara y bien estructurada, permitiendo al visitante comprender sus fundamentos, aplicaciones y potencial innovador.
+                    <br><br>
+                    El contenido está distribuido en secciones temáticas que facilitan la navegación y el aprendizaje progresivo. Cada tecnología cuenta con una explicación accesible, pensada para estudiantes, docentes y personas interesadas en el impacto de la transformación digital.
+                    <br><br>
+                    Como complemento, se incluye un video explicativo que resume los conceptos clave de manera visual y dinámica, ideal para reforzar la comprensión. Además, se han integrado enlaces a cursos gratuitos en línea, seleccionados cuidadosamente para que los usuarios puedan profundizar en los temas tratados y acceder a formación adicional de calidad.
+                    <br><br>
+                    <em class="text-blue-600 font-medium">Esperamos que tu estancia en este Portal de Tecnologías Emergentes sea fructífera, inspiradora y enriquecedora para tu aprendizaje.</em>
+                </p>
+            </div>
+        </div>
+
+        <hr class="border-gray-300 my-12" />
+
+        <div id="sobrenosotros" class="container mx-auto my-12 pb-12 px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-8/12 lg:w-6/12">
+                    <h2 class="text-3xl text-center mb-10 font-extrabold text-gray-800 border-b-2 border-blue-400 pb-2">Conoce a Nuestro Equipo</h2>
+                    <div id="carouselIntegrantes" class="relative overflow-hidden">
+                        <div class="relative w-full overflow-hidden">
+                            <div class="flex transition-transform duration-500 ease-in-out" id="carouselInnerIntegrantes">
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Michelle.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Michelle Arguello">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Michelle Silvia Arguello Orozco</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Materialize – Tecnología en Desarrollo de Software</h6>
+                                            <p class="text-base text-gray-700">Técnica y analítica, con escucha activa y gran capacidad de aprendizaje. Disfruta estar al aire libre y escuchar música. Le gusta Cigarettes After Sex y la película A Silent Voice. <br> <em class="text-blue-500">“Deja de cargar el peso de lo que él ya ha borrado.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Oriana.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Oriana Barcia">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Oriana Valentina Barcia Mantuano</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Materialize – Tecnología en Desarrollo de Software</h6>
+                                            <p class="text-base text-gray-700">Aprende rápido y disfruta del diseño responsivo. Le encantan las series, especialmente Stranger Things. <br> <em class="text-blue-500">“Dios me dijo que nada es en vano, que lo bueno ya está por llegar.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Jhon.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto John Carrillo">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Jhon Jairo Carrillo Baduy</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Tailwind CSS – Creación de páginas web</h6>
+                                            <p class="text-base text-gray-700">De pensamiento lógico y adaptable con práctica constante. Le apasionan los videojuegos y las películas animadas como El Rey León y Dragon Ball. <br> <em class="text-blue-500">“No importa cuántas veces caigo, siempre me tengo que levantar y dar todo de mí.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Axel.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Axel Montesdeoca">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Axel Ricardo Montesdeoca Tafur</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Tailwind – Desarrollo de Software</h6>
+                                            <p class="text-base text-gray-700">Líder autodidacta, con capacidad para trabajar bajo presión y adaptarse a nuevos retos. Practica voleibol y disfruta la serie Suits. <br> <em class="text-blue-500">“Soy lo que hago todos los días, los resultados son un efecto secundario.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Justin.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Justin Pérez">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Justin David Pérez Barros</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Tailwind – Tecnología en Desarrollo de Software</h6>
+                                            <p class="text-base text-gray-700">Creativo y colaborativo, con gusto por el diseño responsivo. Escucha música y explora nuevas ideas en programación. Le gusta El Chavo del 8. <br> <em class="text-blue-500">“El esfuerzo constante supera al talento cuando el talento no se esfuerza.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Maria.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Maria Quijije">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">María De Los Ángeles Quijije Cabrera</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Bootstrap - Tecnología en Desarrollo de Software</h6>
+                                            <p class="text-base text-gray-700">Líder meticulosa y creativa, con enfoque en la organización, comunicación clara y mejora continua. Coordina el equipo técnico y académico. Disfruta leer libros y manwhas, y escuchar música. <br> <em class="text-blue-500">“Solo intento aportar lo mejor de mí, aprendiendo junto a los demás en cada paso del camino.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-integrantes w-full flex-shrink-0 px-4">
+                                    <div class="bg-white rounded-lg shadow-xl border border-gray-100 p-6">
+                                        <div class="h-64 flex items-center justify-center overflow-hidden mb-4">
+                                            <img src="imagen/Miriel.jpg" class="card-img-top img-fluid" style="height: 250px; object-fit: contain;" alt="Foto Miriel Tello">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="text-2xl font-bold text-blue-600 mb-2">Miriel Alexandra Tello Bermúdez</h4>
+                                            <h6 class="text-sm mb-4 text-gray-500">Desarrollo con Bootstrap – Desarrollo de Aplicaciones Web</h6>
+                                            <p class="text-base text-gray-700">Explora nuevas tecnologías con curiosidad y adaptabilidad. Le apasiona el diseño web y disfruta ver K-dramas. <br> <em class="text-blue-500">“La tecnología evoluciona, yo también.”</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             </div>
+                        <button class="absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" type="button" onclick="slideIntegrantes(-1)">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-900 p-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                <span class="sr-only">Anterior</span>
+                            </span>
+                        </button>
+                        <button class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" type="button" onclick="slideIntegrantes(1)">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-900 p-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                <span class="sr-only">Siguiente</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="border-gray-300 my-12" />
+
+    <footer class="bg-gray-800 text-white py-8 mt-5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center md:text-left">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h6 class="font-bold uppercase tracking-wide">Portal de Tecnologías Emergentes</h6>
+                    <p class="text-sm text-gray-400">© 2025 Todos los derechos reservados</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <p class="text-sm">Proyecto Académico - Desarrollo de Software</p>
+                    <div class="flex items-center justify-center md:justify-start mt-1">
+                        <svg class="w-5 h-5 text-purple-500 mr-2" fill="currentColor" viewBox="0 0 16 16"><path d="M5.062 12h3.475c1.804 0 2.888-1.079 2.888-2.897 0-1.582-1.06-2.512-2.5-2.824l.13-.483c.92-.323 1.554-1.28 1.554-2.408C10.6 1.95 9.423 1 7.762 1H5.062V12zM6.375 2.51h1.388c.926 0 1.532.455 1.532 1.294 0 .872-.547 1.344-1.532 1.344H6.375V2.51zm1.388 6.357h1.59c1.025 0 1.633.477 1.633 1.378 0 .93-.63 1.423-1.633 1.423H7.763V8.867z" /><path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" /></svg>
+                        <span class="text-sm text-gray-400">Desarrollado con Tailwind</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <h6 class="font-bold uppercase tracking-wide">Contacto</h6>
+                    <div class="flex items-center justify-center md:justify-end mt-1">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" /></svg>
+                        <ul>
+                            <li class="text-sm text-gray-400">jjcarrillo@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">djperez@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">armontesdeoca@tes.edu.ec</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- SCRIPT PARA EL MENÚ INTERACTIVO Y RESALTADO DE PÁGINA ACTIVA ---
+        const currentPage = window.location.pathname.split('/').pop();
+        const mainMenu = document.getElementById('main-menu');
+        if (mainMenu) {
+            const dropdownButton = document.getElementById('dropdownNavbarLink');
+            const dropdownLinks = document.getElementById('dropdownNavbar').querySelectorAll('a');
+            let isDropdownLinkActive = false;
+
+            dropdownLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300', 'hover:bg-gray-700', 'hover:text-white');
+                    link.classList.add('text-blue-400', 'bg-gray-700');
+                    isDropdownLinkActive = true;
+                }
+            });
+
+            if (isDropdownLinkActive && dropdownButton) {
+                dropdownButton.classList.remove('text-gray-300');
+                dropdownButton.classList.add('text-blue-400');
+            }
+
+            mainMenu.querySelectorAll('li > a, li > button').forEach(link => {
+                if (link.tagName === 'A' && (link.getAttribute('href') === currentPage || (currentPage === '' && link.getAttribute('href') === 'inicio.html'))) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-blue-400');
+                }
+            });
+        }
+
+        // --- SCRIPT PARA EL MENÚ HAMBURGUESA Y DROPDOWN EN MÓVIL ---
+        const navbarToggler = document.getElementById('navbarToggler');
+        const menuDesplegable = document.getElementById('menuDesplegable');
+        const dropdownButton = document.getElementById('dropdownNavbarLink');
+        const dropdownMenu = document.getElementById('dropdownNavbar');
+
+        // Funcionalidad para el botón de hamburguesa principal
+        if (navbarToggler && menuDesplegable) {
+            navbarToggler.addEventListener('click', () => {
+                menuDesplegable.classList.toggle('hidden');
+            });
+        }
+
+        // Funcionalidad para el botón del submenú "Explora las Tecnologías"
+        if (dropdownButton && dropdownMenu) {
+            dropdownButton.addEventListener('click', (event) => {
+                // Solo activa el clic en vistas móviles (breakpoint 'md' de Tailwind es 768px)
+                if (window.innerWidth < 768) {
+                    event.stopPropagation(); // Evita que otros eventos de clic se disparen
+                    dropdownMenu.classList.toggle('hidden');
+                }
+            });
+        }
+    });
+
+    // --- SCRIPTS PARA LOS CARRUSELES (SOLO FUNCIONARÁN EN INICIO.HTML) ---
+    const carouselInnerTecnologias = document.getElementById('carouselInnerTecnologias');
+    if (carouselInnerTecnologias) {
+        let currentTecnologiasIndex = 0;
+        const tecnologiasItems = carouselInnerTecnologias.children.length;
+        window.slideTecnologias = function(direction) {
+            currentTecnologiasIndex = (currentTecnologiasIndex + direction + tecnologiasItems) % tecnologiasItems;
+            carouselInnerTecnologias.style.transform = `translateX(${-currentTecnologiasIndex * 100}%)`;
+        }
+    }
+
+    const carouselInnerIntegrantes = document.getElementById('carouselInnerIntegrantes');
+    if (carouselInnerIntegrantes) {
+        let currentIntegrantesIndex = 0;
+        const totalIntegrantes = document.querySelectorAll('.carousel-item-integrantes').length;
+        window.slideIntegrantes = function(direction) {
+            currentIntegrantesIndex = (currentIntegrantesIndex + direction + totalIntegrantes) % totalIntegrantes;
+            carouselInnerIntegrantes.style.transform = `translateX(${-currentIntegrantesIndex * 100}%)`;
+        }
+    }
+    </script>
+</body>
+
+</html>

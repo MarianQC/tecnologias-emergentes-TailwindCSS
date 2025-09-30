@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Realidad Virtual y Realidad Aumentada</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#2c3e50',
+                        'secondary-dark': '#34495e',
+                        'accent-blue': '#3498db',
+                        'light-bg': '#f4f7f9',
+                        'success-tailwind': '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-bg text-gray-800 font-sans leading-relaxed">
+
+    <nav class="fixed top-0 z-50 w-full bg-gray-900 text-white py-3 shadow-md">
+    <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
+        <a class="text-xl font-bold ml-5 text-blue-400 hover:text-blue-300" href="inicio.html">Tecnologías Emergentes</a>
+        
+        <button class="md:hidden text-white focus:outline-none" type="button" id="navbarToggler" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        
+        <div class="hidden w-full md:block md:w-auto" id="menuDesplegable">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:gap-4 ml-auto" id="main-menu">
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html">Inicio</a></li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html#sobrenosotros">Sobre Nosotros</a></li>
+                <li class="relative group">
+                    <button id="dropdownNavbarLink" class="flex items-center justify-between w-full py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 md:w-auto font-bold">
+                        Explora las Tecnologías
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <ul id="dropdownNavbar" class="absolute hidden z-10 font-normal bg-gray-800 divide-y divide-gray-700 rounded shadow w-56 md:group-hover:block">
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="inteligencia_artificial.html">Inteligencia Artificial</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="machine_learning.html">Machine Learning</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="realidad_vr_ar.html">Realidad Virtual/AR</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="blockchain.html">Blockchain</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="iot.html">Internet de las Cosas</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="criptografia_postcuantica.html">Criptografía post-cuántica</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="impresion_3d_avanzada.html">Impresión 3D avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="robotica_avanzada.html">Robótica Avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="edge_computing.html">Edge Computing</a></li>
+                    </ul>
+                </li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold mr-4" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <main class="container mx-auto max-w-6xl px-4 pt-24">
+        <header class="text-center my-5 pt-5">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-primary-dark">Realidad Virtual y Realidad Aumentada</h1>
+            <p class="text-lg text-gray-500 mt-2">Explora cómo estas tecnologías están transformando el mundo.</p>
+        </header>
+
+        <div class="mb-8 shadow-2xl rounded-xl overflow-hidden border-4 border-accent-blue">
+            <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=1200" 
+                 alt="VR/AR Cover Image"
+                 class="w-full h-96 object-cover" loading="lazy">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-4 bg-white p-8 rounded-xl shadow-lg mb-10">
+            <div>
+                <h2 class="text-3xl font-semibold mb-3 text-primary-dark border-b-2 border-accent-blue pb-1">
+                    ¿Qué es la Realidad Virtual (VR)?
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    La <strong>Realidad Virtual</strong> crea un entorno digital inmersivo en el que el usuario
+                    interactúa con
+                    lentes, controladores y sensores.
+                </p>
+                <ul class="list-disc list-inside space-y-1 text-gray-600 ml-4">
+                    <li>Pantallas de alta resolución</li>
+                    <li>Sensores de movimiento</li>
+                    <li>Procesamiento gráfico avanzado</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-semibold mb-3 text-secondary-dark border-b-2 border-secondary-dark pb-1">
+                    ¿Qué es la Realidad Aumentada (AR)?
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    La <strong>Realidad Aumentada</strong> agrega objetos digitales al mundo real usando smartphones,
+                    tablets o lentes especiales.
+                </p>
+                <ul class="list-disc list-inside space-y-1 text-gray-600 ml-4">
+                    <li>Cámaras y sensores</li>
+                    <li>Reconocimiento de patrones</li>
+                    <li>Displays transparentes</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="my-10 p-6 bg-white rounded-xl shadow-lg">
+            <h3 class="text-3xl text-center text-primary-dark font-bold mb-4 border-b border-accent-blue pb-2">
+                Historia de la Realidad Virtual y Aumentada
+            </h3>
+            <p class="text-gray-700 mb-3">
+                La <strong>Realidad Virtual</strong> comenzó en la década de 1960 con el primer casco de visión desarrollado
+                por Ivan Sutherland, conocido como “The Sword of Damocles”. Desde entonces, ha evolucionado con los avances
+                en gráficos 3D y hardware especializado.
+            </p>
+            <p class="text-gray-700">
+                La <strong>Realidad Aumentada</strong> surgió más tarde, con aplicaciones como Pokémon Go (2016) que
+                popularizaron
+                la tecnología al público general. Hoy en día, empresas como Apple, Meta y Microsoft desarrollan dispositivos
+                dedicados a estas experiencias.
+            </p>
+        </section>
+
+      <section class="my-10">
+    <h3 class="text-3xl text-center text-success-tailwind font-bold mb-6 border-b border-success-tailwind pb-2">
+        Diferencias entre VR y AR 
+    </h3>
+    <div class="shadow-xl rounded-lg border border-gray-200 w-full max-w-75">
+        <table class="min-w-full divide-y divide-gray-200 table-responsive text-sm text-center">
+            <thead class="bg-secondary-dark text-white">
+                <tr>
+                    <th class="px-2 py-3 text-center text-sm font-medium uppercase tracking-wider">
+                        Característica
+                    </th>
+                    <th class="px-2 py-3 text-center text-sm font-medium uppercase tracking-wider">
+                        VR (Virtual Reality)
+                    </th>
+                    <th class="px-2 py-3 text-center text-sm font-medium uppercase tracking-wider">
+                        AR (Augmented Reality)
+                    </th>
+        
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                    <td class="px-2 py-4 whitespace-nowrap font-semibold text-primary-dark">Entorno</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">100% digital</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">Digital sobre el mundo real</td>
+                </tr>
+                <tr>
+                    <td class="px-2 py-4 whitespace-nowrap font-semibold text-primary-dark">Dispositivos</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">Oculus, HTC Vive</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">Smartphones, ARKit, ARCore</td>
+                </tr>
+                <tr>
+                    <td class="px-2 py-4 whitespace-nowrap font-semibold text-primary-dark">Ejemplos</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">Videojuegos VR</td>
+                    <td class="px-2 py-4 whitespace-nowrap text-gray-700">Pokémon Go</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+        <section class="my-10">
+            <h3 class="text-3xl text-center text-primary-dark font-bold mb-6 border-b border-primary-dark pb-2">
+                Videos Recomendados
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="relative pt-[56.25%] shadow-xl rounded-lg overflow-hidden border-2 border-accent-blue">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/IzAuGa7YKeU" 
+                            title="Fundamentos VR/AR"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center mt-2 text-gray-600">Fundamentos de VR/AR</p>
+                </div>
+                <div>
+                    <div class="relative pt-[56.25%] shadow-xl rounded-lg overflow-hidden border-2 border-accent-blue">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/iAxk-k4GfsI" 
+                            title="VR en la educación(Recorrido TES360)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center mt-2 text-gray-600">Aplicacion VR (Recorrido TES360)</p>
+                </div>
+                <div>
+                    <div class="relative pt-[56.25%] shadow-xl rounded-lg overflow-hidden border-2 border-accent-blue">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/PLpDCK3Zy7Q" 
+                            title="VR/AR en la industria"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center mt-2 text-gray-600">Diferencias entre VR/AR</p>
+                </div>
+                <div>
+                    <div class="relative pt-[56.25%] shadow-xl rounded-lg overflow-hidden border-2 border-accent-blue">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/UYl3a_q9K0c?si=GxnRf79kUxLfFlkL" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center mt-2 text-gray-600">Aplicacion AR</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10">
+            <h3 class="text-3xl text-center text-accent-blue font-bold mb-6 border-b border-accent-blue pb-2">
+                Preguntas Frecuentes
+            </h3>
+            <div class="space-y-4 max-w-3xl mx-auto" id="faqVRAR">
+                <div class="accordion-item bg-white rounded-lg shadow-lg border border-gray-200">
+                    <button class="accordion-header w-full text-left p-4 font-semibold text-primary-dark focus:outline-none"
+                        data-target="q1-content">
+                        ¿La VR puede causar mareos?
+                    </button>
+                    <div id="q1-content" class="accordion-content p-4 pt-0 text-gray-700 border-t border-gray-100">
+                        Sí, algunos usuarios experimentan <strong>cinetosis</strong> debido a la desincronización entre
+                        lo que ven
+                        y lo que percibe su cuerpo.
+                    </div>
+                </div>
+                <div class="accordion-item bg-white rounded-lg shadow-lg border border-gray-200">
+                    <button class="accordion-header w-full text-left p-4 font-semibold text-primary-dark focus:outline-none"
+                        data-target="q2-content">
+                        ¿Qué se necesita para usar AR?
+                    </button>
+                    <div id="q2-content" class="accordion-content hidden p-4 pt-0 text-gray-700 border-t border-gray-100">
+                        Generalmente basta con un <strong>smartphone moderno</strong> con cámara y soporte para ARCore
+                        (Android) o
+                        ARKit (iOS).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10">
+            <h3 class="text-3xl text-center text-success-tailwind font-bold mb-6 border-b border-success-tailwind pb-2">
+                📚 Cursos Recomendados
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <div class="p-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary-dark mb-2">Fundación Telefónica</h5>
+                            <p class="text-gray-600 mb-4">Realidad Aumentada y Virtual en tu Aula</p>
+                        </div>
+                        <a href="https://conectaempleo-formacion.fundaciontelefonica.com/web/gl-realidad-aumentada-y-virtual-en-tu-aula-ed-9"
+                            class="mt-auto inline-block py-2 px-4 bg-accent-blue text-white rounded hover:bg-blue-600 text-center transition-colors"
+                            target="_blank">Ver curso</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <div class="p-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary-dark mb-2">Coursera</h5>
+                            <p class="text-gray-600 mb-4">Especialización en Realidad Virtual</p>
+                        </div>
+                        <a href="https://www.coursera.org/specializations/virtual-reality#outcomes"
+                            class="mt-auto inline-block py-2 px-4 bg-accent-blue text-white rounded hover:bg-blue-600 text-center transition-colors"
+                            target="_blank">Ver curso</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <div class="p-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary-dark mb-2">Espacio BIM</h5>
+                            <p class="text-gray-600 mb-4">Curso gratis de Realidad Virtual</p>
+                        </div>
+                        <a href="https://www.espaciobim.com/cursos/realidad-virtual/gratis"
+                            class="mt-auto inline-block py-2 px-4 bg-accent-blue text-white rounded hover:bg-blue-600 text-center transition-colors"
+                            target="_blank">Ver curso</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <div class="p-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary-dark mb-2">PUCP - Coursera</h5>
+                            <p class="text-gray-600 mb-4">Introducción a la Realidad Aumentada</p>
+                        </div>
+                        <a href="https://www.coursera.org/learn/pucp-realidadaumentada"
+                            class="mt-auto inline-block py-2 px-4 bg-accent-blue text-white rounded hover:bg-blue-600 text-center transition-colors"
+                            target="_blank">Ver curso</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <div class="p-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary-dark mb-2">Euroinnova</h5>
+                            <p class="text-gray-600 mb-4">Curso de Realidad Virtual y Aumentada</p>
+                        </div>
+                        <a href="https://www.euroinnova.com/curso-de-realidad-virtual-y-aumentada"
+                            class="mt-auto inline-block py-2 px-4 bg-accent-blue text-white rounded hover:bg-blue-600 text-center transition-colors"
+                            target="_blank">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="my-10 text-center">
+            <button type="button"
+                class="px-6 py-3 border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-white rounded-lg font-semibold transition-colors duration-200"
+                onclick="document.getElementById('infoModal').classList.remove('hidden')">
+                Más información
+            </button>
+        </div>
+    </main>
+
+    <div id="infoModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[9999]" aria-hidden="true">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg shadow-xl w-full max-w-md m-4">
+                <div class="bg-secondary-dark text-white p-4 flex justify-between items-center rounded-t-lg">
+                    <h5 class="text-lg font-bold">Realidad Virtual y Aumentada</h5>
+                    <button type="button" class="text-white hover:text-gray-300"
+                        onclick="document.getElementById('infoModal').classList.add('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4 text-gray-700">
+                    Estas tecnologías están revolucionando la educación, la salud y el entretenimiento, creando
+                    experiencias inmersivas y nuevas oportunidades laborales.
+                </div>
+                <div class="p-4 border-t flex justify-end">
+                    <button type="button"
+                        class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors"
+                        onclick="document.getElementById('infoModal').classList.add('hidden')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center md:text-left">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h6 class="font-bold uppercase tracking-wide">Portal de Tecnologías Emergentes</h6>
+                    <p class="text-sm text-gray-400">© 2025 Todos los derechos reservados</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <p class="text-sm">Proyecto Académico - Desarrollo de Software</p>
+                    <div class="flex items-center justify-center md:justify-start mt-1">
+                        <svg class="w-5 h-5 text-purple-500 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.062 12h3.475c1.804 0 2.888-1.079 2.888-2.897 0-1.582-1.06-2.512-2.5-2.824l.13-.483c.92-.323 1.554-1.28 1.554-2.408C10.6 1.95 9.423 1 7.762 1H5.062V12zM6.375 2.51h1.388c.926 0 1.532.455 1.532 1.294 0 .872-.547 1.344-1.532 1.344H6.375V2.51zm1.388 6.357h1.59c1.025 0 1.633.477 1.633 1.378 0 .93-.63 1.423-1.633 1.423H7.763V8.867z" />
+                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+                        </svg>
+                        <span class="text-sm text-gray-400">Desarrollado con Tailwind</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <h6 class="font-bold uppercase tracking-wide">Contacto</h6>
+                    <div class="flex items-center justify-center md:justify-end mt-1">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <ul>
+                            <li a class="text-sm text-gray-400">jjcarrillo@tes.edu.ec</a></li>
+                            <li a class="text-sm text-gray-400">djperez@tes.edu.ec</a></li>
+                            <li a class="text-sm text-gray-400">armontesdeoca@tes.edu.ec</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- SCRIPT PARA EL MENÚ INTERACTIVO Y RESALTADO DE PÁGINA ACTIVA ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'RealidadVR_AR.html'; // Fallback para la página actual
+            const mainMenu = document.getElementById('main-menu');
+            if (!mainMenu) return;
+            const dropdownButton = document.getElementById('dropdownNavbarLink');
+            const dropdownLinks = document.getElementById('dropdownNavbar').querySelectorAll('a');
+            let isDropdownLinkActive = false;
+            dropdownLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300', 'hover:bg-gray-700', 'hover:text-white');
+                    link.classList.add('text-blue-400', 'bg-gray-700');
+                    isDropdownLinkActive = true;
+                }
+            });
+            if (isDropdownLinkActive && dropdownButton) {
+                dropdownButton.classList.remove('text-gray-300');
+                dropdownButton.classList.add('text-blue-400');
+            }
+            mainMenu.querySelectorAll('li > a, li > button').forEach(link => {
+                if (link.tagName === 'A' && link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-blue-400');
+                }
+            });
+        });
+        
+        // --- SCRIPT PARA ABRIR Y CERRAR MENÚ MÓVIL Y DROPDOWN ---
+        document.getElementById('navbarToggler').addEventListener('click', () => {
+            document.getElementById('menuDesplegable').classList.toggle('hidden');
+        });
+        
+        const dropdownButton = document.getElementById('dropdownNavbarLink');
+        const dropdownMenu = document.getElementById('dropdownNavbar');
+
+        dropdownButton.addEventListener('click', () => {
+             // Solo alterna en pantallas pequeñas, en grandes funciona con hover
+            if (window.innerWidth < 768) {
+                dropdownMenu.classList.toggle('hidden');
+            }
+        });
+        // Cierra el menú si se hace clic fuera
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+
+        // --- Script para el Acordeón (FAQ) ---
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const targetId = header.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const isHidden = content.classList.contains('hidden');
+                
+                // Cierra todos los demás
+                document.querySelectorAll('.accordion-content').forEach(c => {
+                    if (c.id !== targetId) {
+                       c.classList.add('hidden');
+                    }
+                });
+                
+                // Alterna el actual
+                content.classList.toggle('hidden');
+            });
+        });
+        // Abrir el primer acordeón por defecto
+        document.querySelector('.accordion-content').classList.remove('hidden');
+
+    </script>
+</body>
+</html>

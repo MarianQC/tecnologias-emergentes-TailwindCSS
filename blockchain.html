@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Blockchain - Tecnologías Emergentes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#2c3e50',
+                        'secondary-dark': '#34495e',
+                        'accent-blue': '#3498db',
+                        'light-bg': '#f4f7f9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <nav class="fixed top-0 z-50 w-full bg-gray-900 text-white py-3 shadow-md">
+    <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
+        <a class="text-xl font-bold ml-5 text-blue-400 hover:text-blue-300" href="inicio.html">Tecnologías Emergentes</a>
+        
+        <button class="md:hidden text-white focus:outline-none" type="button" id="navbarToggler" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        
+        <div class="hidden w-full md:block md:w-auto" id="menuDesplegable">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:gap-4 ml-auto" id="main-menu">
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html">Inicio</a></li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html#sobrenosotros">Sobre Nosotros</a></li>
+                <li class="relative group">
+                    <button id="dropdownNavbarLink" class="flex items-center justify-between w-full py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 md:w-auto font-bold">
+                        Explora las Tecnologías
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <ul id="dropdownNavbar" class="absolute hidden z-10 font-normal bg-gray-800 divide-y divide-gray-700 rounded shadow w-56 md:group-hover:block">
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="inteligencia_artificial.html">Inteligencia Artificial</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="machine_learning.html">Machine Learning</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="realidad_vr_ar.html">Realidad Virtual/AR</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="blockchain.html">Blockchain</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="iot.html">Internet de las Cosas</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="criptografia_postcuantica.html">Criptografía post-cuántica</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="impresion_3d_avanzada.html">Impresión 3D avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="robotica_avanzada.html">Robótica Avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="edge_computing.html">Edge Computing</a></li>
+                    </ul>
+                </li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold mr-4" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main>
+        <div class="container mx-auto text-center my-5 pt-24">
+            <h1 class="text-5xl font-bold text-primary-dark">Blockchain</h1>
+        </div>
+        <div class="container mx-auto py-5 px-4">
+            <div class="flex flex-wrap items-start -mx-4">
+                <div class="w-full md:w-5/12 px-4 mb-4 md:mb-0">
+                    <img src="imagen/hash.webp" alt="Ilustración del funcionamiento de un hash en blockchain" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-7/12 px-4">
+                    <h2 class="text-3xl mb-3 font-semibold">¿Qué es Blockchain?</h2>
+                    <p class="mb-3">
+                        Blockchain es una tecnología que permite registrar información de forma segura, transparente y descentralizada. Cada bloque contiene tres elementos clave: su propio <strong>hash</strong> (una especie de huella digital), el hash del bloque anterior y los datos registrados. Si alguien intenta modificar un bloque, el hash cambia y rompe la cadena, lo que alerta a toda la red.
+                    </p>
+                    <p class="mb-3">
+                        <strong>Ejemplo práctico:</strong> Una red de agricultores registra la producción de cacao. Si alguien intenta alterar los datos para decir que un cacao de baja calidad es premium, el hash se rompe y los demás lo detectan. Así se protege la autenticidad del producto.
+                    </p>
+                    <p class="mb-3">
+                        <strong>Usos actuales:</strong> Finanzas, trazabilidad de productos, salud, votaciones digitales y contratos inteligentes.
+                    </p>
+                    <p class="mb-3">
+                        <strong>Oferta laboral:</strong> Desarrolladores blockchain, auditores de contratos inteligentes, especialistas en trazabilidad, diseñadores UX para dApps y consultores en transformación digital.
+                    </p>
+                    <p class="text-gray-500 italic">
+                        En Ecuador y Latinoamérica, blockchain ya se explora en agricultura, educación y sistemas de votación.
+                    </p>
+                    <div class="flex flex-wrap mt-5 -mx-2">
+                        <div class="w-full md:w-1/2 mb-4 px-2">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/8rUGRdOi3XM" title="Video de Introducción a Blockchain" allowfullscreen></iframe>
+                            </div>
+                            <p class="mt-2 text-center text-sm">Introducción a Blockchain</p>
+                        </div>
+                        <div class="w-full md:w-1/2 mb-4 px-2">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/Yn8WGaO__ak" title="Video sobre aplicaciones reales de Blockchain" allowfullscreen></iframe>
+                            </div>
+                            <p class="mt-2 text-center text-sm">Aplicaciones reales de Blockchain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="https://skillsbuild.org/es/students/course-catalog/blockchain" target="_blank" class="block w-full text-center bg-primary text-white font-bold py-3 px-4 rounded hover:text-black bg-blue-600 transition-colors text-lg">
+                    📚 Explora este curso gratuito sobre Blockchain
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-8 mt-5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center md:text-left">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h6 class="font-bold uppercase tracking-wide">Portal de Tecnologías Emergentes</h6>
+                    <p class="text-sm text-gray-400">© 2025 Todos los derechos reservados</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <p class="text-sm">Proyecto Académico - Desarrollo de Software</p>
+                    <div class="flex items-center justify-center md:justify-start mt-1">
+                        <svg class="w-5 h-5 text-purple-500 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.062 12h3.475c1.804 0 2.888-1.079 2.888-2.897 0-1.582-1.06-2.512-2.5-2.824l.13-.483c.92-.323 1.554-1.28 1.554-2.408C10.6 1.95 9.423 1 7.762 1H5.062V12zM6.375 2.51h1.388c.926 0 1.532.455 1.532 1.294 0 .872-.547 1.344-1.532 1.344H6.375V2.51zm1.388 6.357h1.59c1.025 0 1.633.477 1.633 1.378 0 .93-.63 1.423-1.633 1.423H7.763V8.867z" />
+                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+                        </svg>
+                        <span class="text-sm text-gray-400">Desarrollado con Tailwind</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <h6 class="font-bold uppercase tracking-wide">Contacto</h6>
+                    <div class="flex items-center justify-center md:justify-end mt-1">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <ul>
+                            <li class="text-sm text-gray-400">jjcarrillo@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">djperez@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">armontesdeoca@tes.edu.ec</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // --- SCRIPT UNIFICADO PARA INTERACTIVIDAD ---
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- RESALTADO DE PÁGINA ACTIVA ---
+            const currentPage = window.location.pathname.split('/').pop() || 'blockchain.html'; 
+            const mainMenu = document.getElementById('main-menu');
+            if (!mainMenu) return;
+
+            const dropdownButton = document.getElementById('dropdownNavbarLink');
+            const dropdownLinks = document.getElementById('dropdownNavbar').querySelectorAll('a');
+            let isDropdownLinkActive = false;
+
+            dropdownLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300', 'hover:bg-gray-700', 'hover:text-white');
+                    link.classList.add('text-blue-400', 'bg-gray-700');
+                    isDropdownLinkActive = true;
+                }
+            });
+
+            if (isDropdownLinkActive && dropdownButton) {
+                dropdownButton.classList.remove('text-gray-300');
+                dropdownButton.classList.add('text-blue-400');
+            }
+            
+            mainMenu.querySelectorAll('li > a:not(#dropdownNavbarLink)').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-blue-400');
+                }
+            });
+
+            // --- MENÚ MÓVIL Y DROPDOWN ---
+            const navbarToggler = document.getElementById('navbarToggler');
+            const menuDesplegable = document.getElementById('menuDesplegable');
+            const dropdownMenu = document.getElementById('dropdownNavbar');
+
+            // Abrir y cerrar menú principal en móvil
+            if (navbarToggler) {
+                navbarToggler.addEventListener('click', () => {
+                    menuDesplegable.classList.toggle('hidden');
+                });
+            }
+
+            // Abrir dropdown en móvil con un clic
+            if (dropdownButton) {
+                dropdownButton.addEventListener('click', (event) => {
+                    if (window.innerWidth < 768) {
+                        event.stopPropagation();
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            }
+            
+            // Cierra el menú desplegable si se hace clic fuera de él
+            document.addEventListener('click', (event) => {
+                const isClickInsideButton = dropdownButton && dropdownButton.contains(event.target);
+                const isClickInsideMenu = dropdownMenu && dropdownMenu.contains(event.target);
+
+                if (!isClickInsideButton && !isClickInsideMenu) {
+                    if (dropdownMenu && !dropdownMenu.classList.contains('hidden')) {
+                        dropdownMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

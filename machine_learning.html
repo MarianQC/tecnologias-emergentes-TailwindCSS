@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Machine Learning - Tecnologías Emergentes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#2c3e50',
+                        'secondary-dark': '#34495e',
+                        'accent-blue': '#3498db',
+                        'light-bg': '#f4f7f9',
+                        'success-tailwind': '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-bg text-gray-800 font-sans leading-relaxed">
+
+    <nav class="fixed top-0 z-50 w-full bg-gray-900 text-white py-3 shadow-md">
+    <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
+        <a class="text-xl font-bold ml-5 text-blue-400 hover:text-blue-300" href="inicio.html">Tecnologías Emergentes</a>
+        
+        <button class="md:hidden text-white focus:outline-none" type="button" id="navbarToggler" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        
+        <div class="hidden w-full md:block md:w-auto" id="menuDesplegable">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:gap-4 ml-auto" id="main-menu">
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html">Inicio</a></li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold" href="inicio.html#sobrenosotros">Sobre Nosotros</a></li>
+                <li class="relative group">
+                    <button id="dropdownNavbarLink" class="flex items-center justify-between w-full py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 md:w-auto font-bold">
+                        Explora las Tecnologías
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <ul id="dropdownNavbar" class="absolute hidden z-10 font-normal bg-gray-800 divide-y divide-gray-700 rounded shadow w-56 md:group-hover:block">
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="inteligencia_artificial.html">Inteligencia Artificial</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="machine_learning.html">Machine Learning</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="realidad_vr_ar.html">Realidad Virtual/AR</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="blockchain.html">Blockchain</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="iot.html">Internet de las Cosas</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="criptografia_postcuantica.html">Criptografía post-cuántica</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="impresion_3d_avanzada.html">Impresión 3D avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="robotica_avanzada.html">Robótica Avanzada</a></li>
+                        <li><a class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white" href="edge_computing.html">Edge Computing</a></li>
+                    </ul>
+                </li>
+                <li><a class="block py-2 pr-4 pl-3 text-gray-300 hover:text-blue-400 md:p-0 font-bold mr-4" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <main class="container mx-auto max-w-6xl px-4 pt-24">
+        <header class="text-center mb-10">
+            <h1 class="text-5xl font-extrabold text-accent-blue border-b-4 border-primary-dark pb-3 inline-block">
+                Machine Learning
+            </h1>
+        </header>
+        <section class="bg-white p-8 rounded-xl shadow-2xl space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-primary-dark border-l-4 border-accent-blue pl-3">
+                    ¿Qué es el Machine Learning?
+                </h2>
+                <p class="text-gray-700">
+                    El <strong>Machine Learning</strong> o aprendizaje automático es una rama de la inteligencia artificial que permite a las computadoras "aprender" a partir de los datos. En lugar de ser programadas de forma explícita para cada tarea, las máquinas usan algoritmos que identifican patrones y mejoran su desempeño conforme reciben más información.
+                </p>
+                <figure class="flex justify-center my-6">
+                    <img src="https://www.captia.es/assets/img/web/ML.jpg" alt="Imagen sobre Machine Learning (ML) de Captia" class="rounded-lg shadow-xl w-full max-w-md border-4 border-gray-200" loading="lazy">
+                </figure>
+                <p class="text-gray-700">Es similar a como aprendemos los seres humanos:</p>
+                <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                    <li>Un niño no memoriza todas las fotos de un perro en el mundo.</li>
+                    <li>Lo que hace es <strong>ver varios ejemplos</strong>, reconocer patrones (orejas, hocico, cola) y luego puede identificar un perro nuevo aunque nunca lo haya visto antes.</li>
+                </ul>
+                <p class="text-gray-700">
+                    De la misma manera, el Machine Learning permite que un programa identifique patrones en los datos y pueda generalizar para usarlos en situaciones nuevas.
+                </p>
+            </div>
+            <hr>
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-primary-dark border-l-4 border-accent-blue pl-3">
+                    ¿Por qué es importante el Machine Learning?
+                </h2>
+                <p class="text-gray-700">Vivimos en una época en la que se generan cantidades inmensas de datos cada segundo:</p>
+                <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                    <li>Fotos en redes sociales.</li>
+                    <li>Videos en Youtube o Tiktok.</li>
+                    <li>Compras en línea.</li>
+                    <li>Movimientos de dinero en bancos.</li>
+                    <li>Datos de sensores en autos, relojes inteligentes o cámaras.</li>
+                </ul>
+                <p class="text-gray-700">
+                    Es imposible que un humano analice todo eso. Ahí entra el ML, que puede procesar millones de datos rápidamente y encontrar patrones que de otra forma pasarían desapercibidos.
+                </p>
+                <p class="text-gray-700">Gracias a esto, las empresas pueden:</p>
+                <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                    <li>Anticiparse a problemas.</li>
+                    <li>Mejorar la experiencia de los clientes.</li>
+                    <li>Reducir costos y errores humanos.</li>
+                    <li>Crear productos y servicios mucho más inteligentes.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-primary-dark border-l-4 border-accent-blue pl-3">
+                    Fundamentos del Machine Learning
+                </h2>
+                <p class="text-gray-700">El aprendizaje automático funciona siguiendo una lógica básica:</p>
+                <ol class="list-decimal list-outside space-y-2 text-gray-700 ml-5 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <li><strong>Recolección de datos</strong>: se obtiene información relevante (imágenes, números, texto, sonidos, etc.).</li>
+                    <li><strong>Preparación de datos</strong>: se limpian y organizan los datos para que el sistema los entienda.</li>
+                    <li><strong>Entrenamiento</strong>: el modelo “aprende” analizando muchos ejemplos.</li>
+                    <li><strong>Evaluación</strong>: se prueba con datos que nunca ha visto antes para comprobar si aprendió correctamente.</li>
+                    <li><strong>Predicción/uso real</strong>: una vez validado, el modelo ya está listo para aplicarse en la vida real.</li>
+                </ol>
+                <p class="text-gray-700 font-semibold">
+                    Lo más importante es que el modelo <span class="text-accent-blue">nunca deja de aprender</span>: puede actualizarse constantemente con nueva información, mejorando con el tiempo.
+                </p>
+            </div>
+            <hr>
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-primary-dark border-l-4 border-accent-blue pl-3">
+                    Tipos de aprendizaje en Machine Learning
+                </h2>
+                <figure class="flex justify-center my-6">
+                    <img src="imagen/aprendizaje.png" alt="Diagrama de los tipos de Machine Learning" class="rounded-lg shadow-xl w-full max-w-lg border-4 border-gray-200" loading="lazy">
+                </figure>
+                <div class="p-4 bg-blue-50 rounded-lg border-l-8 border-accent-blue space-y-2">
+                    <h3 class="text-2xl font-semibold text-accent-blue">Aprendizaje Supervisado</h3>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Se le muestran datos de entrada junto con la respuesta correcta.</li>
+                        <li>Así, el sistema aprende a predecir resultados futuros.</li>
+                        <li>Es como un maestro que corrige la tarea de un estudiante hasta que este aprende.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Ejemplo real:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Google Fotos reconoce tus amigos y familiares porque ha visto muchas imágenes etiquetadas previamente.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Otros usos:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Diagnóstico médico (ej. detectar tumores en radiografías).</li>
+                        <li>Predecir precios de productos o casas.</li>
+                        <li>Clasificar correos electrónicos en “spam” y “no spam”.</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-lg border-l-8 border-secondary-dark space-y-2">
+                    <h3 class="text-2xl font-semibold text-secondary-dark">Aprendizaje No Supervisado</h3>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>No se le dice cuál es la respuesta correcta.</li>
+                        <li>El sistema debe descubrir patrones por sí solo.</li>
+                        <li>Se usa mucho para agrupar datos o detectar cosas que no son normales.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Ejemplo real:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Spotify analiza lo que escuchan millones de usuarios y agrupa canciones según estilos y comportamientos, aunque nunca le hayas dicho qué género prefieres.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Otros usos:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Identificar clientes con hábitos de compra similares.</li>
+                        <li>Descubrir tendencias en redes sociales.</li>
+                        <li>Detectar transacciones bancarias sospechosas que no siguen el comportamiento normal.</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg border-l-8 border-success-tailwind space-y-2">
+                    <h3 class="text-2xl font-semibold text-success-tailwind">Aprendizaje por Refuerzo</h3>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>El sistema aprende a base de prueba y error.</li>
+                        <li>Recibe recompensas cuando acierta y castigos cuando se equivoca.</li>
+                        <li>Se parece al proceso de entrenar a un perro con premios y correcciones.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Ejemplo real:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li><strong>Los videojuegos</strong>: hay algoritmos que han aprendido a jugar Pac-Man, Mario Bros o incluso Go, simplemente probando millones de movimientos hasta ser expertos.</li>
+                    </ul>
+                    <p class="font-medium text-gray-800 mt-3">Otros usos:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li>Robots que aprenden a caminar o manipular objetos.</li>
+                        <li>Vehículos autónomos que mejoran su conducción con la práctica.</li>
+                        <li>Optimización de rutas de entrega en empresas de logística.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-primary-dark border-l-4 border-accent-blue pl-3">
+                    Casos de uso actuales de Machine Learning
+                </h2>
+                <p class="text-gray-700">Machine Learning no es algo del futuro, ya está en nuestro día a día:</p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-gray-700 ml-5 list-disc list-outside">
+                    <li><strong>Asistentes virtuales</strong>: Alexa, Siri o Google Assistant que entienden la voz humana.</li>
+                    <li><strong>Redes sociales</strong>: filtros automáticos de spam, reconocimiento facial en fotos, recomendaciones de contenido.</li>
+                    <li><strong>Medicina</strong>: análisis de radiografías, predicción de enfermedades, descubrimiento de nuevos medicamentos.</li>
+                    <li><strong>Negocios</strong>: chatbots de atención al cliente, predicción de ventas, segmentación de consumidores.</li>
+                    <li><strong>Finanzas</strong>: detección de fraudes en tiempo real, predicción de riesgos de crédito.</li>
+                    <li><strong>Transporte</strong>: aplicaciones como Google Maps o Waze que predicen el tráfico y optimizan rutas.</li>
+                    <li><strong>Entretenimiento</strong>: Netflix, YouTube y TikTok que muestran recomendaciones personalizadas.</li>
+                </ul>
+                <figure class="flex justify-center my-6">
+                    <img src="https://inesdi-cdn.s3.eu-west-3.amazonaws.com/inesdi-prod/2023-02/ejemplos%20de%20machine%20learning-1.jpg" alt="Ejemplos de Machine Learning en la vida diaria" class="rounded-lg shadow-xl w-full max-w-md border-4 border-gray-200" loading="lazy">
+                </figure>
+            </div>
+            <hr>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                <div class="space-y-4 p-4 bg-gray-50 rounded-lg shadow-inner">
+                    <h3 class="text-2xl font-semibold text-accent-blue">El impacto de Machine Learning en la sociedad</h3>
+                    <p class="text-gray-700">El Machine Learning está cambiando la manera en que trabajamos y vivimos:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li><strong>Educación</strong>: plataformas que se adaptan al ritmo de cada estudiante.</li>
+                        <li><strong>Trabajo</strong>: automatización de tareas repetitivas, permitiendo que las personas se enfoquen en trabajos más creativos.</li>
+                        <li><strong>Salud</strong>: diagnósticos más rápidos y precisos.</li>
+                        <li><strong>Medio ambiente</strong>: predicción del clima, análisis de deforestación, detección temprana de incendios.</li>
+                        <li><strong>Industria 4.0</strong>: fábricas inteligentes que se ajustan en tiempo real a la demanda.</li>
+                    </ul>
+                </div>
+                <div class="space-y-4 p-4 bg-red-50 rounded-lg shadow-inner border border-red-200">
+                    <h3 class="text-2xl font-semibold text-primary-dark">Desafíos del Machine Learning</h3>
+                    <p class="text-gray-700">Aunque es muy poderoso, también trae retos importantes:</p>
+                    <ul class="list-disc list-outside space-y-1 text-gray-700 ml-5">
+                        <li><strong>Privacidad</strong>: los modelos aprenden de grandes volúmenes de datos, muchos de ellos personales.</li>
+                        <li><strong>Sesgos</strong>: si los datos de entrenamiento están incompletos o son injustos, el modelo puede tomar decisiones erróneas o discriminatorias.</li>
+                        <li><strong>Explicabilidad</strong>: a veces es difícil entender cómo un modelo llegó a una decisión.</li>
+                        <li><strong>Sustitución de empleos</strong>: algunas tareas repetitivas pueden ser reemplazadas por sistemas automáticos.</li>
+                    </ul>
+                    <p class="text-gray-700 mt-4 font-bold text-red-600">
+                        Por eso es clave que el desarrollo de Machine Learning se haga de forma ética y responsable.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="space-y-6 pt-4">
+                <h3 class="text-2xl font-semibold text-primary-dark border-b border-gray-300 pb-2">Recursos adicionales</h3>
+                <p class="text-gray-700">Puedes aprender más en los siguientes recursos:</p>
+                <ul class="list-disc list-outside space-y-2 text-gray-700 ml-5">
+                    <li>
+                        <a href="https://www.ibm.com/cloud/learn/machine-learning" target="_blank" class="text-accent-blue hover:underline font-medium">
+                            Introducción a Machine Learning - IBM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://learn.microsoft.com/es-es/training/modules/introduction-to-machine-learning/" target="_blank" class="text-accent-blue hover:underline font-medium">
+                            Guía básica de Machine Learning - Microsoft
+                        </a>
+                    </li>
+                </ul>
+                <figure class="mt-8 text-center">
+                    <div class="relative pt-[56.25%] w-full max-w-2xl mx-auto shadow-xl rounded-lg overflow-hidden border-4 border-accent-blue">
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/CjdusCm73p0" title="Video introductorio a Machine Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <figcaption class="mt-3 text-sm text-gray-600">Video: Introducción a Inteligencia Artificial/Machine Learning.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8 mt-5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center md:text-left">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h6 class="font-bold uppercase tracking-wide">Portal de Tecnologías Emergentes</h6>
+                    <p class="text-sm text-gray-400">© 2025 Todos los derechos reservados</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <p class="text-sm">Proyecto Académico - Desarrollo de Software</p>
+                    <div class="flex items-center justify-center md:justify-start mt-1">
+                        <svg class="w-5 h-5 text-purple-500 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.062 12h3.475c1.804 0 2.888-1.079 2.888-2.897 0-1.582-1.06-2.512-2.5-2.824l.13-.483c.92-.323 1.554-1.28 1.554-2.408C10.6 1.95 9.423 1 7.762 1H5.062V12zM6.375 2.51h1.388c.926 0 1.532.455 1.532 1.294 0 .872-.547 1.344-1.532 1.344H6.375V2.51zm1.388 6.357h1.59c1.025 0 1.633.477 1.633 1.378 0 .93-.63 1.423-1.633 1.423H7.763V8.867z" />
+                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+                        </svg>
+                        <span class="text-sm text-gray-400">Desarrollado con Tailwind</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <h6 class="font-bold uppercase tracking-wide">Contacto</h6>
+                    <div class="flex items-center justify-center md:justify-end mt-1">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <ul>
+                            <li class="text-sm text-gray-400">jjcarrillo@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">djperez@tes.edu.ec</li>
+                            <li class="text-sm text-gray-400">armontesdeoca@tes.edu.ec</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- SCRIPT UNIFICADO PARA INTERACTIVIDAD ---
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- RESALTADO DE PÁGINA ACTIVA ---
+            const currentPage = window.location.pathname.split('/').pop() || 'machine_learning.html'; 
+            const mainMenu = document.getElementById('main-menu');
+            if (!mainMenu) return;
+
+            const dropdownButton = document.getElementById('dropdownNavbarLink');
+            const dropdownLinks = document.getElementById('dropdownNavbar').querySelectorAll('a');
+            let isDropdownLinkActive = false;
+
+            dropdownLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300', 'hover:bg-gray-700', 'hover:text-white');
+                    link.classList.add('text-blue-400', 'bg-gray-700');
+                    isDropdownLinkActive = true;
+                }
+            });
+
+            if (isDropdownLinkActive && dropdownButton) {
+                dropdownButton.classList.remove('text-gray-300');
+                dropdownButton.classList.add('text-blue-400');
+            }
+            
+            mainMenu.querySelectorAll('li > a:not(#dropdownNavbarLink)').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-blue-400');
+                }
+            });
+
+            // --- MENÚ MÓVIL Y DROPDOWN ---
+            const navbarToggler = document.getElementById('navbarToggler');
+            const menuDesplegable = document.getElementById('menuDesplegable');
+            const dropdownMenu = document.getElementById('dropdownNavbar');
+
+            // Abrir y cerrar menú principal en móvil
+            if (navbarToggler) {
+                navbarToggler.addEventListener('click', () => {
+                    menuDesplegable.classList.toggle('hidden');
+                });
+            }
+
+            // Abrir dropdown en móvil con un clic
+            if (dropdownButton) {
+                dropdownButton.addEventListener('click', (event) => {
+                    if (window.innerWidth < 768) {
+                        event.stopPropagation();
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            }
+            
+            // Cierra el menú desplegable si se hace clic fuera de él
+            document.addEventListener('click', (event) => {
+                const isClickInsideButton = dropdownButton && dropdownButton.contains(event.target);
+                const isClickInsideMenu = dropdownMenu && dropdownMenu.contains(event.target);
+
+                if (!isClickInsideButton && !isClickInsideMenu) {
+                    if (dropdownMenu && !dropdownMenu.classList.contains('hidden')) {
+                        dropdownMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
